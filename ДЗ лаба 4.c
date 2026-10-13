@@ -1,24 +1,24 @@
 #include <stdio.h>  
 #include <locale.h>
 int main() {
-    
+
     setlocale(LC_ALL, "Russian");
 
     int A, B;
 
-    
-    printf("Введите число A: ");
+
+    printf("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ A: ");
     scanf_s("%d", &A);
 
-    printf("Введите число B: ");
+    printf("Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёРµ B: ");
     scanf_s("%d", &B);
 
-    
-    if (( A % 2) ^ (B % 2)) {
-        printf("Пароль активен!\n");
+
+    if ((A % 2) ^ (B % 2)) {
+        printf("РџР°СЂРѕР»СЊ РІРµСЂРЅС‹Р№!\n");
     }
     else {
-        printf("Пароль НЕ активен.\n");
+        printf("РџРїР°СЂРѕР»СЊ РЅРµРІРµСЂРЅС‹Р№.\n");
     }
 
     return 0;
